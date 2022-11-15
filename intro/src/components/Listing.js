@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 function Listing(props) {
     const { items } = props;
-    console.log(items)
     return (
         <div className="item-list">
             {items.map(o => !o.error_messages && <div className="item" key={o.listing_id}>
